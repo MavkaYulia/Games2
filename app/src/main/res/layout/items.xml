@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageTanks"
+            android:layout_width="0dp"
+            android:layout_height="217dp"
+            android:layout_marginTop="20dp"
+            android:onClick="clik"
+            android:src="@drawable/no_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:label="@id/textNameTanks"
+            android:id="@+id/textNameTanks"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorTank"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageTanks"
+            app:layout_constraintEnd_toEndOf="@+id/imageTanks"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageTanks"
+            app:layout_constraintTop_toTopOf="@+id/imageTanks"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
